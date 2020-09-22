@@ -4,7 +4,21 @@ public class Conta {
 	int numero;
 	int agencia;
 	double saldo;
-	String titular;
+//	String titular;
+//	String telefone;
+//	String endereco;
+	Cliente titular; 
+	
+	//Construtor
+	
+	Conta(int numero, int agencia, double saldo, Cliente titular){
+		//Escopo (Variavel local x global)
+		//this ==> apontando para a propria classe
+		this.numero = numero;
+		this.agencia = agencia;
+		this.saldo = saldo;
+		this.titular = titular;
+	}
 
 	// metodos
 	boolean saca(double valor) {

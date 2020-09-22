@@ -10,12 +10,12 @@ public class TestaConta {
 		c1.agencia = 1234;
 		c1.numero = 5678;
 		c1.saldo = 7000;
-		c1.titular = "Pedro";
+		//c1.titular = "Pedro";
 		
 		c2.agencia = 1234;
 		c2.numero = 7788;
 		c2.saldo = 1000;
-		c2.titular = "Cintia";
+		//c2.titular = "Cintia";
 		
 		System.out.println("Saldo: " + c1.saldo);		
 		//Saque de 200
