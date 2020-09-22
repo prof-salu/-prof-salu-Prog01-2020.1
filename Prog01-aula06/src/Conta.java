@@ -1,13 +1,19 @@
 
 public class Conta {
+	//Encapsulamento
+	
+	//Modificadores de acesso
+	//public 	--> Todo mundo tem acesso 
+	//private 	--> Apenas a propria classe tem acesso
+	
 	// Atributos
-	int numero;
-	int agencia;
-	double saldo;
+	private int numero;
+	private int agencia;
+	private double saldo;
 //	String titular;
 //	String telefone;
 //	String endereco;
-	Cliente titular; 
+	private Cliente titular; 
 	
 	//Construtor
 	
@@ -19,6 +25,24 @@ public class Conta {
 		this.saldo = saldo;
 		this.titular = titular;
 	}
+	
+	//GET e SET
+	
+	//GET
+	public int getAgencia() {
+		return agencia;
+	}
+	
+	
+	public double getSaldo() {
+		return saldo;
+	}
+	
+	//SET
+	public void setAgencia(int agencia) {
+		this.agencia = agencia;
+	}
+
 
 	// metodos
 	boolean saca(double valor) {

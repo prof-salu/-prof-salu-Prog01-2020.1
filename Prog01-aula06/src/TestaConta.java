@@ -1,6 +1,9 @@
 
 public class TestaConta {
 	public static void main(String[] args) {
+		
+		/*Corrigir os erros da classe*/
+		
 		double taxa = 0.5;
 		
 		//Instanciando uma conta

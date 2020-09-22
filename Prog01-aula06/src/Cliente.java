@@ -4,7 +4,9 @@ public class Cliente {
 	String telefone;
 	String endereco;
 	
-	Cliente(){
-		//Construtor vazio == Construtor default
+	Cliente(String nome, String telefone, String endereco){
+		this.nome = nome;
+		this.telefone = telefone;
+		this.endereco = endereco;
 	}
 }
