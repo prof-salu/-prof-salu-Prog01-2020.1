@@ -64,7 +64,6 @@ public class Conta {
 	public void setTitular(Cliente titular) {
 		this.titular = titular;		
 	}
-
 	
 	// metodos
 	public boolean saca(double valor) {
