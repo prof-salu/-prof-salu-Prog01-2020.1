@@ -18,5 +18,12 @@ public class Gerente extends Funcionario{
 		this.qtdFuncionarios = qtdFuncionarios;
 	}
 	
+	@Override
+	public double calculaBonificacao() {
+//		double bonificacao = getSalario() * 0.10;
+//		bonificacao = bonificacao + 1000;
+		
+		return super.calculaBonificacao() + 1000;
+	}
 	
 }

@@ -1,6 +1,6 @@
 package empresa;
 
-public class Funcionario {
+public class Funcionario extends Object {
 	//Encapsular
 	
 	/*Modificadores de acesso: 

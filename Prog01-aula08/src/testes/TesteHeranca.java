@@ -20,6 +20,10 @@ public class TesteHeranca {
 		System.out.println("Funcionario: " + f1.calculaBonificacao());
 		
 		v1.setNome("Ana");
+		//1% de comissao ==> * 0.01
+		
+		v1.setComissao(0.01);
+		v1.setTotalVendas(20000);
 		v1.setSalario(4000);
 		System.out.println("Vendedor: " + v1.calculaBonificacao());
 		
