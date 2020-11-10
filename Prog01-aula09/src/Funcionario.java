@@ -23,5 +23,5 @@ public abstract class Funcionario {
 		this.cargo = cargo;
 	}	
 	
-	public abstract double calcularSalario();
+	//public abstract double calcularSalario();
 }

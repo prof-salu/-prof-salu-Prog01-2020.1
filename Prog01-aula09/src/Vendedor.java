@@ -1,5 +1,5 @@
 
-public class Vendedor extends Mensalista{
+public class Vendedor extends Mensalista implements IFolha{
 	private double comissao;
 	private double totalVendas;
 	

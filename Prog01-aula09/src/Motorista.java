@@ -1,5 +1,5 @@
 
-public class Motorista extends Funcionario {
+public class Motorista extends Funcionario implements IFolha, IImprimivel{
 	private double valorHora;
 	private int totalHoras;
 
@@ -19,5 +19,13 @@ public class Motorista extends Funcionario {
 	@Override
 	public double calcularSalario() {
 		return valorHora * totalHoras;
+	}
+	
+	@Override
+	public void exibeInformacoes() {
+		System.out.println("Nome: " + getNome());
+		System.out.println("Matricula: " + getMatricula());
+		System.out.println("Salario: " + calcularSalario());
+		
 	}
 }

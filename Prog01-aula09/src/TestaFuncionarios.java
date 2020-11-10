@@ -25,7 +25,7 @@ public class TestaFuncionarios {
 		p1.setNome("Henrique");
 		p1.setCargo("Dev junior");
 		p1.setSalario(3500);
-		System.out.println("Salario Henrique: " + p1.calcularSalario());
+		//System.out.println("Salario Henrique: " + p1.calcularSalario());
 		
 		FolhaSalarial folha = new FolhaSalarial();
 		
