@@ -41,10 +41,15 @@ public class TestaContas {
 		System.out.println("Saldo CP (+limite): " + (cp.getSaldo() + cp.getLimite()));
 		System.out.println();
 		
-		cc.sacar(600);
+		// Caindo na exceção
+		try {
+			cc.sacar(600);
+		}catch(IllegalArgumentException e) {
+			System.out.println(e);
+		}
+		
 		cp.sacar(600);
-		
-		
+
 		System.out.println("- Saque de 600");
 		System.out.println();
 		
@@ -63,6 +68,24 @@ public class TestaContas {
 		System.out.println("Saldo CP (+limite): " + (cp.getSaldo() + cp.getLimite()));
 		System.out.println();
 		
+		// Caindo na exceção
+		try {
+			cp.depositar(-500);
+		}catch(IllegalArgumentException e) {
+			System.out.println(e);
+		}
+		
+		
+		System.out.println(" + Deposito de 500");
+		System.out.println();
+		
+		
+		System.out.println("Saldo CC: " + cc.getSaldo());
+		System.out.println("Saldo CP: " + cp.getSaldo());
+		System.out.println("Saldo CP (+limite): " + (cp.getSaldo() + cp.getLimite()));
+		System.out.println();
+		
+		System.out.println("Fim do programa");
 		
 //		cc.mostrarDados();
 //		System.out.println();

@@ -16,7 +16,7 @@ public class ContaCorrente extends Conta implements Imprimivel{
 			saldo -= valor + taxaDeOperacao;
 			return true;
 		}else {
-			return false;
+			throw new RuntimeException("Valor invalido");
 		}
 	}
 	

@@ -33,16 +33,16 @@ public abstract class Conta {
 			saldo += valor;
 			return true;
 		}else {
-			return false;
+			throw new IllegalArgumentException("O valor deve ser positivo");
 		}
 	}
 	
-	public boolean transferir(double valor, Conta favorecido) {
+	public boolean transferir(double valor, Conta favorecido){
 		if(sacar(valor) == true) {
 			favorecido.depositar(valor);
 			return true;
 		}else {
-			return false;
+			throw new IllegalArgumentException("O valor invalido");
 		}
 	}
 }
